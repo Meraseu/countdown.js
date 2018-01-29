@@ -5,7 +5,7 @@ countdown 자바스크립트 라이브러리 입니다.
 ## Sample Usage
 
 ```
-var countdown = new Countdown(.countdown', {
+var countdown = new Countdown('.countdown', {
     number : {
         days : 1,
         hours : 1,
