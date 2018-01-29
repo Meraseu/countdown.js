@@ -11,7 +11,7 @@ window.Countdown = (function (Countdown) {
         if (!container) {
             return;
         }
-        this.container = container;
+        this.container = document.querySelector(container);
         this.options = options;
         this.daysElement = this.container.querySelector('.days') || '';
         this.hoursElement = this.container.querySelector('.hours') || '';
@@ -91,7 +91,6 @@ window.Countdown = (function (Countdown) {
             this.minutesElement.textContent = this.minutes;
             this.secondsElement.textContent = this.seconds;
             this.then = this.date + this.getMinutes() + this.getSeconds();
-            console.log(this.then);
             this.setTimer(function (seconds) {
                 self.setTimeLeftMinutes(seconds);
                 self.setTimeLeftSeconds(seconds);
